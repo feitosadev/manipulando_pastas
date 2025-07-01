@@ -27,6 +27,15 @@ public class Program {
 		for(File file: files) {
 			System.out.println(file);
 		}
+		
+		System.out.println();
+		
+		boolean success = new File(stringPath + "\\subdir").mkdir();
+		
+		if(success) {
+			System.out.println("Subpasta criada com sucesso. "+success);
+		}
+		
 		entrada.close();
 	}
 }
